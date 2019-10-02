@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int max_of_three(int a,int b,int c)
+{
+    int max1;
+    return ((max1=a>b?a:b)>c?max1:c);
+}
+int main() {
+
+  int a,b,c;
+  printf("Enter three numbers\n");
+  scanf("%d\n%d\n%d\n",&a,&b,&c);
+  int ans = max_of_three(a, b, c);
+    printf("largest number is %d", ans);
+ return 0;
+}
+
+
+
